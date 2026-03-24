@@ -39,7 +39,7 @@ jobs:
           ./gradlew assembleRelease --no-daemon
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: VideoToMP3-release
           path: android/app/build/outputs/apk/release/*.apk
